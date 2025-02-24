@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        WebxFlow
+    </title>
+    <link rel="shortcut icon" href="./assets/logo/logo-fit.png" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'class-display-semibold': ['ClashDisplay-Semibold', 'sans-serif'],
+                    },
+                    fontSize: {
+                        'xs': '14px',
+                        'sm': '16px', // p
+                        'md': '18px', // p
+                        'base': '20px', //h4
+                        'lg': '22px', // h3
+                        'xl': '36px', // h2
+                        '2xl': '65px', // h1
+                    },
+                    backgroundColor: {
+                        primary: '#5313CA',
+                        secondary: '#FF9736',
+                        'secondary-white': '#F3F0F8',
+                        'rich-black': '#050729',
+                        electricBlue: '#75F1F1',
+                        gray: '#EDEEF2',
+                    },
+                    colors: {
+                        primary: '#5313CA',
+                        secondary: '#FF9736',
+                        'rich-black': '#050729',
+                        gray: '#989AAE',
+                        electricBlue: '#75F1F1',
+                    },
+                    borderColor: {
+                        'gray-100': '#EEEFFA',
+                    },
+                    boxShadow: {
+                        base: '0px 0px 50px -2px rgba(5, 7, 41, 0.11)'
+                    },
+                    borderRadius: {
+                        'base': '12px',
+                        'md': '16px',
+                        'lg': '26px',
+                        'full': '50px',
+                    },
+                    animation: {
+                        'marquee': 'marquee 15s linear infinite alternate'
+                    },
+                    keyframes: {
+                        marquee: {
+                            '0%': { transform: 'translateX(100%)' },
+                            '100%': { transform: 'translateX(-100%)' },
+                        }
+                    },
+                    media: {
+                        'xxl': '1440px',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="container mx-auto px-4 md:px-[75px] min-h-[52px] h-[52px] mt-[30px] flex items-center justify-between">
+        <img src="./assets/logo/logo.png" alt="webx">
+        <nav class="flex flex-none md:flex-1 items-center justify-between">
+            <ul class="hidden md:flex gap-[40px] mx-auto [&_li>a]:text-sm [&_li:is(.active)>a]:font-bold">
+                <li class="active"><a href='#'>Home</a></li>
+                <li><a href='#features'>Features</a></li>
+                <li><a href='#testimonial'>Testimonial</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero" class="container mx-auto px-4 md:px-[75px] mt-[70px] flex flex-col md:flex-row justify-between items-center gap-[85px] md:gap-0">
+            <div class="basis-1/2 text-rich-black flex flex-col gap-[30px]">
+                <div class="bg-secondary-white flex items-center gap-[10px] px-[22px] py-[10px] w-fit rounded-full">
+                    <img src="./assets/icons/vuesax/linear/cup.svg" alt="Cup Icon">
+                    <p class="font-bold text-xs">
+                        <span class="text-primary">200+ </span> businesses scaled online last year
+                    </p>
+                </div>
+                <h1 class="text-2xl font-class-display-semibold leading-tight">Website Solutions & Traffic Growth for Your Business</h1>
+                <p class="text-md">Get a custom website or app built for your business and drive the right traffic to boost your growth.
+
+                    Learn how to attract the right audience and scale effortlessly—whether you're a local shop, startup, or service provider.</p>
+                <div class="flex items-center gap-[14px] [&_a]:px-[28px] [&_a]:py-[20px] [&_a]:rounded-base">
+                    <a href="#" class="px-[22px] py-[14px] bg-primary text-white rounded-base">Explore Features</a>
+                
+                </div>
+            </div>
+            <figure>
+                <img width="510" height="560" src="./assets/images/hero_illustration.png" alt="Hero Ilustration">
+            </figure>
+        </section>
+        <section id="brands" class="container mx-auto px-4 md:px-[75px] mt-[50px] mb-[70px] flex flex-col items-center justify-center gap-[30px] overflow-hidden">
+            <h3 class="text-center text-lg font-semibold">
+                Basic Over&puncsp;<span class="font-bold text-primary">280</span>&puncsp;companies<br />trust WebxFlow for their
+                <span class="font-bold text-primary">businesses.</span>
+            </h3>
+            
+        </section>
+        <section id="features" class="bg-gray py-[70px]">
+            <div class="container mx-auto px-4 md:px-[75px] flex flex-col gap-[30px]">
+                <div class="bg-primary text-white px-[22px] py-[10px] w-fit rounded-full">
+                    Top Features
+                </div>
+                <h2 class="text-xl font-bold">Built-in Robust Features<br />Versatile Purposes</h2>
+                <div class="grid grid-cols-12 gap-[30px]">
+                    <article
+                        class="col-span-full md:col-span-4 flex flex-col bg-white h-[350px] w-full p-[30px] rounded-md shadow-base">
+                        <div class="relative w-fit">
+                            <img class="relative z-[1]" width="70" height="70" src="./assets/icons/vuesax/linear/global-search.svg" alt="Real Tracking Icon">
+                            <div class="absolute top-1/2 -translate-y-1/2 right-0 size-10 bg-electricBlue rounded-full">
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-[10px] mt-auto">
+                            <h3 class="text-lg font-bold">Real Tracking</h3>
+                            <p class="text-md text-gray">Get the clients behavior faster and accurate by a few of
+                                clicks.</p>
+                        </div>
+                    </article>
+                    <article
+                        class="col-span-full md:col-span-4 flex flex-col bg-white h-[350px] w-full p-[30px] rounded-md shadow-base">
+                        <div class="relative w-fit">
+                            <img class="relative z-[1]" width="70" height="70"
+                                src="./assets/icons/vuesax/linear/device-message.svg" alt="Email Marketing Icon">
+                            <div class="absolute top-1/2 -translate-y-1/2 right-0 size-10 bg-electricBlue rounded-full">
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-[10px] mt-auto">
+                            <h3 class="text-lg font-bold">Email Marketing</h3>
+                            <p class="text-md text-gray">Send a couple of templates A/B testing to encourage clients</p>
+                        </div>
+                    </article>
+                    <article
+                        class="col-span-full md:col-span-4 flex flex-col bg-white h-[350px] w-full p-[30px] rounded-md shadow-base">
+                        <div class="relative w-fit">
+                            <img class="relative z-[1]" width="70" height="70"
+                                src="./assets/icons/vuesax/linear/bill.svg" alt="Payment Gateway Icon">
+                            <div class="absolute top-1/2 -translate-y-1/2 right-0 size-10 bg-electricBlue rounded-full">
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-[10px] mt-auto">
+                            <h3 class="text-lg font-bold">Payment Gateway</h3>
+                            <p class="text-md text-gray">Clients would send the money to your bank account, secured.</p>
+                        </div>
+                    </article>
+                    <article
+                        class="col-span-full md:col-span-6 flex flex-col bg-white h-[350px] w-full p-[30px] rounded-md shadow-base">
+                        <div class="relative w-fit">
+                            <img class="relative z-[1]" width="70" height="70"
+                                src="./assets/icons/vuesax/linear/security-card.svg" alt="Avoid Client Fraud Icon">
+                            <div class="absolute top-1/2 -translate-y-1/2 right-0 size-10 bg-electricBlue rounded-full">
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-[10px] mt-auto">
+                            <h3 class="text-lg font-bold">Avoid Client Fraud</h3>
+                            <p class="text-md text-gray">Our AI technologies can prevent client to steal your final
+                                income from each project you worked.</p>
+                        </div>
+                    </article>
+                    <article
+                        class="col-span-full md:col-span-6 flex flex-col bg-white h-[350px] w-full p-[30px] rounded-md shadow-base">
+                        <div class="relative w-fit">
+                            <img class="relative z-[1]" width="70" height="70"
+                                src="./assets/icons/vuesax/linear/bezier.svg" alt="More Automations Icon">
+                            <div class="absolute top-1/2 -translate-y-1/2 right-0 size-10 bg-electricBlue rounded-full">
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-[10px] mt-auto">
+                            <h3 class="text-lg font-bold">More Automations</h3>
+                            <p class="text-md text-gray">Our system will notify clients regarding deadline payment,
+                                repetition orders, and many more.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+       
+
+               
+        </section>
+        <section id="testimonial" class="py-[70px]">
+            <div class="container mx-auto px-4 md:px-[75px] flex flex-col items-center gap-[50px]">
+                <div class="space-y-[30px]">
+                    <div class="bg-primary text-white px-[22px] py-[10px] w-fit rounded-full mx-auto">
+                        <p class="font-bold text-xs">
+                            Success Customers
+                        </p>
+                    </div>
+                    <h2 class="text-xl font-bold text-center">Listen What They&OpenCurlyQuote;re <br/>Saying About WebxFlow</h2>
+                </div>
+                <div class="grid grid-cols-12 gap-[30px]">
+                    <article
+                        class="col-span-full md:col-span-4 flex flex-col justify-between bg-white h-[350px] w-full p-[30px] rounded-md shadow-base">
+                        <div class="rounded-[100%] size-[70px] overflow-hidden">
+                            <img class="object-cover" width="70" height="70" src="./assets/images/people/people_1.png" alt="People Image 1">
+                        </div>
+                        <p class="text-md">Thanks to WebXFlow, we now have a professional website that perfectly represents our brand. The integrated payment solutions made transactions smoother than ever</p>
+                        <div class="flex flex-col gap-1">
+                            <h3 class="text-lg font-bold">Sammy</h3>
+                        </div>
+                    </article>
+                    <article
+                        class="col-span-full md:col-span-4 flex flex-col justify-between bg-white h-[350px] w-full p-[30px] rounded-md">
+                        <div class="rounded-[100%] size-[70px] overflow-hidden">
+                            <img class="object-cover" width="70" height="70" src="./assets/images/people/people_1.png" alt="People Image 2">
+                        </div>
+                        <p class="text-md">WebXFlow’s AI-powered fraud prevention gave us peace of mind. We no longer worry about payment disputes or revenue loss</p>
+                        <div class="flex flex-col gap-1">
+                            <h3 class="text-lg font-bold">Rama Jaya</h3>
+                        </div>
+                    </article>
+                    <article
+                        class="col-span-full md:col-span-4 flex flex-col justify-between bg-white h-[350px] w-full p-[30px] rounded-md">
+                        <div class="rounded-[100%] size-[70px] overflow-hidden">
+                            <img class="object-cover" width="70" height="70" src="./assets/images/people/people_1.png" alt="People Image 3">
+                        </div>
+                        <p class="text-md">WebxFlow helped us boosting our clients prospective to get more high quality projects ever.</p>
+                        <div class="flex flex-col gap-1">
+                            <h3 class="text-lg font-bold">Ankit</h3>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container mx-auto px-4 md:px-[75px] text-center border-t border-gray-100">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-4 py-[50px]">
+            <img src="./assets/logo/logo.png" alt="webxflow">
+            <p class="text-sm text-gray">
+                All rights reserved WebxFlow by Rohan Chandupatla
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html> 

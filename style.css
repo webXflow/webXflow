@@ -1,0 +1,16 @@
+.image-container {
+    position: relative;
+    display: inline-block;
+    border-radius: 20px; /* Rounded corners */
+    overflow: hidden; /* Ensures rounded corners apply */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    padding: 10px;
+    background: linear-gradient(135deg, #f3a4ff, #5ecbff); /* Gradient background */
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 15px; /* Ensures the image follows the container’s rounding */
+}
